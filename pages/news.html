@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Новости — Гражданин</title>
+<link rel="stylesheet" href="../pages.css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a>
+  <a class="burger" href="#menu" aria-label="Меню">☰</a>
+  <nav id="menu" class="menu">
+    <a href="initiatives.html">Инициативы</a><a href="create.html">Предложить</a><a href="vote.html">Голосование</a><a class="active" href="news.html">Новости</a><a href="about.html">О проекте</a><a href="faq.html">FAQ</a><a href="contacts.html">Контакты</a>
+  </nav>
+  <div class="nav-actions"><a class="btn btn-ghost" href="../auth/login.html">Войти</a><a class="btn btn-primary" href="../auth/register.html">Регистрация</a></div>
+</div></header>
+
+<section class="page-hero"><div class="container">
+  <span class="eyebrow">Лента</span><h1 style="font-size:clamp(2rem,4vw,3rem)">Новости и итоги</h1>
+  <p>Что происходит с инициативами и какие решения уже приняты.</p>
+</div></section>
+
+<section class="section"><div class="container">
+  <span class="anchor" id="f-all"></span><span class="anchor" id="f-done"></span><span class="anchor" id="f-work"></span><span class="anchor" id="f-platform"></span>
+  <div class="filters">
+    <a class="chip" href="#f-all">Все</a>
+    <a class="chip" href="#f-done">Реализовано</a>
+    <a class="chip" href="#f-work">В работе</a>
+    <a class="chip" href="#f-platform">Платформа</a>
+  </div>
+  <div class="grid grid-3" id="news">
+    <div class="card" data-cat="done"><div class="news-cover"></div><span class="tag">Реализовано</span><h3>Открыт новый сквер на улице Мира</h3><p>Инициатива жителей, набравшая 4 100 голосов, воплощена в жизнь за четыре месяца.</p><span class="meta">12 октября 2026</span></div>
+    <div class="card" data-cat="work"><div class="news-cover c2"></div><span class="tag">В работе</span><h3>Начались работы по велодорожке</h3><p>Первый участок протяжённостью 2,4 км будет готов до конца ноября.</p><span class="meta">8 октября 2026</span></div>
+    <div class="card" data-cat="platform"><div class="news-cover c3"></div><span class="tag">Платформа</span><h3>Мы запустили личные кабинеты</h3><p>Теперь можно отслеживать свои инициативы и голоса в одном месте.</p><span class="meta">3 октября 2026</span></div>
+    <div class="card" data-cat="done"><div class="news-cover c2"></div><span class="tag">Реализовано</span><h3>Установлены новые светофоры у школ</h3><p>Три опасных перехода получили светофоры по решению жителей района.</p><span class="meta">28 сентября 2026</span></div>
+    <div class="card" data-cat="work"><div class="news-cover c3"></div><span class="tag">В работе</span><h3>Разработан проект центра помощи</h3><p>Архитекторы представили эскизы и ждут комментариев от горожан.</p><span class="meta">21 сентября 2026</span></div>
+    <div class="card" data-cat="platform"><div class="news-cover"></div><span class="tag">Платформа</span><h3>Достигнут рубеж в 12 000 участников</h3><p>Спасибо всем, кто делает город лучше вместе с нами.</p><span class="meta">15 сентября 2026</span></div>
+  </div>
+</div></section>
+
+<footer class="site-footer"><div class="container">
+  <div class="foot-grid">
+    <div><a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a><p class="muted" style="margin-top:14px;font-size:.92rem">Платформа, где жители сами решают, как должен развиваться их город.</p></div>
+    <div><h4>Платформа</h4><ul><li><a href="initiatives.html">Инициативы</a></li><li><a href="create.html">Предложить идею</a></li><li><a href="vote.html">Голосование</a></li></ul></div>
+    <div><h4>Проект</h4><ul><li><a href="about.html">О проекте</a></li><li><a href="news.html">Новости</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div><h4>Аккаунт</h4><ul><li><a href="../auth/login.html">Войти</a></li><li><a href="../auth/register.html">Регистрация</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+  </div>
+  <div class="copy"><span>© 2026 Гражданин. Все права защищены.</span><span>Сделано для жителей</span></div>
+</div></footer>
+</body>
+</html>
