@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Профиль — Гражданин</title>
+<link rel="stylesheet" href="../pages.css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a>
+  <a class="burger" href="#menu" aria-label="Меню">☰</a>
+  <nav id="menu" class="menu">
+    <a href="initiatives.html">Инициативы</a><a href="create.html">Предложить</a><a href="vote.html">Голосование</a><a href="news.html">Новости</a><a href="about.html">О проекте</a><a href="faq.html">FAQ</a><a href="contacts.html">Контакты</a>
+  </nav>
+  <div class="nav-actions"><a class="btn btn-ghost" href="../auth/login.html">Выйти</a><a class="btn btn-primary" href="create.html">Новая инициатива</a></div>
+</div></header>
+
+<section class="page-hero"><div class="container">
+  <div class="profile-head">
+    <div class="avatar">А</div>
+    <div><h1 style="font-size:2rem">Анна Иванова</h1><p style="margin-top:4px">Ленинский район · на платформе с сентября 2026</p></div>
+  </div>
+  <div class="stats" style="margin-top:34px">
+    <div class="stat"><b>3</b><span>мои инициативы</span></div>
+    <div class="stat"><b>27</b><span>поддержано</span></div>
+    <div class="stat"><b>14</b><span>голосований</span></div>
+    <div class="stat"><b>1</b><span>реализована</span></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="tabs">
+    <a class="chip" href="#tab-mine">Мои инициативы</a>
+    <a class="chip" href="#tab-support">Поддержанные</a>
+    <a class="chip" href="#tab-settings">Настройки</a>
+  </div>
+
+  <div class="tab-panel" id="tab-mine">
+    <h2>Мои инициативы</h2>
+    <div class="list-row"><div><h3 style="margin:0">Новый сквер во дворе на Ленина</h3><span class="meta">3 120 голосов · на сборе подписей</span></div><a class="btn btn-ghost btn-sm" href="initiative.html">Открыть</a></div>
+    <div class="list-row"><div><h3 style="margin:0">Освещение парковой аллеи</h3><span class="meta">3 280 голосов · на рассмотрении</span></div><a class="btn btn-ghost btn-sm" href="initiatives.html">Открыть</a></div>
+    <div class="list-row"><div><h3 style="margin:0">Лавочки у остановки</h3><span class="meta">Реализовано</span></div><a class="btn btn-ghost btn-sm" href="news.html">Отчёт</a></div>
+  </div>
+
+  <div class="tab-panel" id="tab-support">
+    <h2>Поддержанные</h2>
+    <div class="list-row"><div><h3 style="margin:0">Велодорожка вдоль набережной</h3><span class="meta">Вы поддержали 5 октября</span></div><a class="btn btn-ghost btn-sm" href="initiatives.html">Открыть</a></div>
+    <div class="list-row"><div><h3 style="margin:0">Раздельный сбор отходов</h3><span class="meta">Вы поддержали 28 сентября</span></div><a class="btn btn-ghost btn-sm" href="initiatives.html">Открыть</a></div>
+  </div>
+
+  <div class="tab-panel" id="tab-settings">
+    <h2>Настройки</h2>
+    <div class="form-panel" style="max-width:560px">
+      <form class="form" action="profile.html" onsubmit="return checkForm(this)" style="margin-top:0">
+        <div class="field"><label for="sn">Имя</label><input class="input" id="sn" name="fullname" value="Анна Иванова" required></div>
+        <div class="field"><label for="se">Email</label><input class="input" id="se" name="email" type="text" inputmode="email" value="anna@example.com" required></div>
+        <label class="check"><input type="checkbox" checked> Получать уведомления о моих инициативах</label>
+        <div class="form-msg"></div>
+        <button class="btn btn-primary" type="submit">Сохранить</button>
+      </form>
+    </div>
+  </div>
+</div></section>
+
+<footer class="site-footer"><div class="container">
+  <div class="foot-grid">
+    <div><a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a><p class="muted" style="margin-top:14px;font-size:.92rem">Платформа, где жители сами решают, как должен развиваться их город.</p></div>
+    <div><h4>Платформа</h4><ul><li><a href="initiatives.html">Инициативы</a></li><li><a href="create.html">Предложить идею</a></li><li><a href="vote.html">Голосование</a></li></ul></div>
+    <div><h4>Проект</h4><ul><li><a href="about.html">О проекте</a></li><li><a href="news.html">Новости</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div><h4>Аккаунт</h4><ul><li><a href="../auth/login.html">Войти</a></li><li><a href="../auth/register.html">Регистрация</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+  </div>
+  <div class="copy"><span>© 2026 Гражданин. Все права защищены.</span><span>Сделано для жителей</span></div>
+</div></footer>
+<script src="../script.js"></script>
+</body>
+</html>

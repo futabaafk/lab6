@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакты — Гражданин</title>
+<link rel="stylesheet" href="../pages.css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a>
+  <a class="burger" href="#menu" aria-label="Меню">☰</a>
+  <nav id="menu" class="menu">
+    <a href="initiatives.html">Инициативы</a><a href="create.html">Предложить</a><a href="vote.html">Голосование</a><a href="news.html">Новости</a><a href="about.html">О проекте</a><a href="faq.html">FAQ</a><a class="active" href="contacts.html">Контакты</a>
+  </nav>
+  <div class="nav-actions"><a class="btn btn-ghost" href="../auth/login.html">Войти</a><a class="btn btn-primary" href="../auth/register.html">Регистрация</a></div>
+</div></header>
+
+<section class="page-hero"><div class="container">
+  <span class="eyebrow">Связь</span><h1 style="font-size:clamp(2rem,4vw,3rem)">Свяжитесь с нами</h1>
+  <p>Есть вопрос, предложение или нужна помощь с инициативой? Напишите — мы ответим в течение рабочего дня.</p>
+</div></section>
+
+<section class="section"><div class="container grid grid-2" style="align-items:start">
+  <div class="grid" style="gap:16px">
+    <div class="card"><div class="icon">✉️</div><h3>Почта</h3><p>hello@grazhdanin.example</p></div>
+    <div class="card"><div class="icon">📞</div><h3>Телефон</h3><p>+996 (000) 00-00-00 · Пн–Пт, 9:00–18:00</p></div>
+    <div class="card"><div class="icon">📍</div><h3>Офис</h3><p>г. Бишкек, ул. Примерная, 1</p></div>
+  </div>
+  <div class="form-panel">
+    <h3>Написать сообщение</h3>
+    <form class="form" onsubmit="return checkForm(this)">
+      <div class="field"><label for="n">Имя</label><input class="input" id="n" name="name" placeholder="Ваше имя" required></div>
+      <div class="field"><label for="e">Email</label><input class="input" id="e" name="email" type="text" inputmode="email" placeholder="you@example.com" required></div>
+      <div class="field"><label for="m">Сообщение</label><textarea class="textarea" id="m" placeholder="Чем мы можем помочь?" required></textarea></div>
+      <div class="form-msg"></div>
+      <button class="btn btn-primary" type="submit">Отправить</button>
+    </form>
+  </div>
+</div></section>
+
+<footer class="site-footer"><div class="container">
+  <div class="foot-grid">
+    <div><a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a><p class="muted" style="margin-top:14px;font-size:.92rem">Платформа, где жители сами решают, как должен развиваться их город.</p></div>
+    <div><h4>Платформа</h4><ul><li><a href="initiatives.html">Инициативы</a></li><li><a href="create.html">Предложить идею</a></li><li><a href="vote.html">Голосование</a></li></ul></div>
+    <div><h4>Проект</h4><ul><li><a href="about.html">О проекте</a></li><li><a href="news.html">Новости</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div><h4>Аккаунт</h4><ul><li><a href="../auth/login.html">Войти</a></li><li><a href="../auth/register.html">Регистрация</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+  </div>
+  <div class="copy"><span>© 2026 Гражданин. Все права защищены.</span><span>Сделано для жителей</span></div>
+</div></footer>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Инициативы — Гражданин</title>
+<link rel="stylesheet" href="../pages.css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a>
+  <a class="burger" href="#menu" aria-label="Меню">☰</a>
+  <nav id="menu" class="menu">
+    <a class="active" href="initiatives.html">Инициативы</a><a href="create.html">Предложить</a><a href="vote.html">Голосование</a><a href="news.html">Новости</a><a href="about.html">О проекте</a><a href="faq.html">FAQ</a><a href="contacts.html">Контакты</a>
+  </nav>
+  <div class="nav-actions"><a class="btn btn-ghost" href="../auth/login.html">Войти</a><a class="btn btn-primary" href="../auth/register.html">Регистрация</a></div>
+</div></header>
+
+<section class="page-hero"><div class="container">
+  <span class="eyebrow">Каталог</span><h1 style="font-size:clamp(2rem,4vw,3rem)">Все инициативы</h1>
+  <p>Выберите тему и поддержите идеи, которые считаете важными.</p>
+</div></section>
+
+<section class="section"><div class="container">
+  <span class="anchor" id="f-all"></span><span class="anchor" id="f-yard"></span><span class="anchor" id="f-transport"></span><span class="anchor" id="f-eco"></span><span class="anchor" id="f-social"></span>
+  <div class="filters">
+    <a class="chip" href="#f-all">Все</a>
+    <a class="chip" href="#f-yard">Благоустройство</a>
+    <a class="chip" href="#f-transport">Транспорт</a>
+    <a class="chip" href="#f-eco">Экология</a>
+    <a class="chip" href="#f-social">Социальная сфера</a>
+  </div>
+  <div class="grid grid-3" id="initiatives-grid"></div>
+</div></section>
+
+<!-- Detail: модальное окно, содержимое подставляет initiatives.js -->
+<div id="detail-section" class="modal hidden">
+  <div class="modal-box">
+    <button id="close-btn" class="modal-close" type="button" aria-label="Закрыть">×</button>
+    <div id="detail-card"></div>
+  </div>
+</div>
+
+<footer class="site-footer"><div class="container">
+  <div class="foot-grid">
+    <div><a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a><p class="muted" style="margin-top:14px;font-size:.92rem">Платформа, где жители сами решают, как должен развиваться их город.</p></div>
+    <div><h4>Платформа</h4><ul><li><a href="initiatives.html">Инициативы</a></li><li><a href="create.html">Предложить идею</a></li><li><a href="vote.html">Голосование</a></li></ul></div>
+    <div><h4>Проект</h4><ul><li><a href="about.html">О проекте</a></li><li><a href="news.html">Новости</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div><h4>Аккаунт</h4><ul><li><a href="../auth/login.html">Войти</a></li><li><a href="../auth/register.html">Регистрация</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+  </div>
+  <div class="copy"><span>© 2026 Гражданин. Все права защищены.</span><span>Сделано для жителей</span></div>
+</div></footer>
+<script src="../initiatives.js"></script>
+</body>
+</html>

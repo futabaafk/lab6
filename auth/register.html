@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Регистрация — Гражданин</title>
+<link rel="stylesheet" href="../pages.css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a class="logo" href="../index.html"><span class="logo-mark"></span>Гражданин</a>
+  <a class="burger" href="#menu" aria-label="Меню">☰</a>
+  <nav id="menu" class="menu">
+    <a href="../pages/initiatives.html">Инициативы</a><a href="../pages/create.html">Предложить</a><a href="../pages/vote.html">Голосование</a><a href="../pages/news.html">Новости</a><a href="../pages/about.html">О проекте</a><a href="../pages/faq.html">FAQ</a><a href="../pages/contacts.html">Контакты</a>
+  </nav>
+  <div class="nav-actions"><a class="btn btn-ghost" href="login.html">Войти</a><a class="btn btn-primary" href="register.html">Регистрация</a></div>
+</div></header>
+
+<main class="auth-wrap">
+  <div class="auth-card">
+    <h1>Создать аккаунт</h1>
+    <p class="muted">Присоединяйтесь к тысячам жителей, которые меняют свой город.</p>
+    <form class="form" action="../pages/profile.html" onsubmit="return checkForm(this)">
+      <div class="row">
+        <div class="field"><label for="fn">Имя</label><input class="input" id="fn" name="first" autocomplete="given-name" placeholder="Анна" required></div>
+        <div class="field"><label for="ln">Фамилия</label><input class="input" id="ln" name="last" autocomplete="family-name" placeholder="Иванова" required></div>
+      </div>
+      <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="text" inputmode="email" placeholder="you@example.com" required></div>
+      <div class="field"><label for="phone">Номер телефона</label><input class="input" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+996 555 123 456" required></div>
+      <div class="field"><label for="city">Город / район</label><input class="input" id="city" placeholder="Например: Бишкек, Ленинский район"></div>
+      <div class="field"><label for="pw">Пароль</label>
+        <input class="input" id="pw" name="password" type="password" minlength="6" placeholder="Минимум 6 символов" required></div>
+      <div class="field"><label for="pw2">Повторите пароль</label>
+        <input class="input" id="pw2" name="password2" type="password" minlength="6" placeholder="Ещё раз пароль" required></div>
+      <label class="check"><input type="checkbox" name="agree" required> Я принимаю условия использования и политику конфиденциальности</label>
+      <div class="form-msg"></div>
+      <button class="btn btn-primary btn-block" type="submit">Зарегистрироваться</button>
+    </form>
+    <p class="auth-foot">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+  </div>
+</main>
+<script src="../script.js"></script>
+</body>
+</html>
