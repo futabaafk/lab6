@@ -80,7 +80,7 @@ function showInitiativeDetail(id) {
     detailSection.classList.remove('hidden');   // показываем модалку
 }
 
-// закрытие модалки
+/* Закрытие модалки: крестик и клик по тёмному фону */
 
 closeBtn.addEventListener('click', () => detailSection.classList.add('hidden'));
 detailSection.addEventListener('click', (e) => {

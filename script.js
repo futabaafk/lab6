@@ -34,6 +34,7 @@ function checkForm(form) {
       msg.className = 'form-msg error';
       msg.textContent = fields[i][2];
       input.focus();
+      input.classList.add('shake');               // поле трясётся (анимация в style.css)
       return false;                               // форму не отправляем
     }
   }
