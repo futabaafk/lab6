@@ -23,18 +23,22 @@
 
 <section class="section"><div class="container" style="max-width:780px">
   <div class="form-panel">
-    <form class="form" action="initiatives.html" style="margin-top:0">
-      <div class="field"><label for="t">Название</label><input class="input" id="t" name="title" placeholder="Например: Освещение парковой аллеи" required></div>
+    <form class="form" id="create-form" novalidate style="margin-top:0">
+      <div class="field"><label for="t">Название</label><input class="input" id="t" name="title" placeholder="Например: Освещение парковой аллеи"></div>
       <div class="row">
         <div class="field"><label for="cat">Категория</label>
-          <select class="select" id="cat"><option>Благоустройство</option><option>Транспорт</option><option>Экология</option><option>Социальная сфера</option><option>Другое</option></select></div>
-        <div class="field"><label for="loc">Район</label><input class="input" id="loc" placeholder="Название района"></div>
+          <select class="select" id="cat" name="category"><option value="yard">Благоустройство</option><option value="transport">Транспорт</option><option value="eco">Экология</option><option value="social">Социальная сфера</option></select></div>
+        <div class="field"><label for="loc">Район</label><input class="input" id="loc" name="district" placeholder="Название района"></div>
       </div>
-      <div class="field"><label for="p">Описание проблемы</label><textarea class="textarea" id="p" placeholder="Что сейчас не так?"></textarea></div>
-      <div class="field"><label for="s">Предлагаемое решение</label><textarea class="textarea" id="s" placeholder="Что именно нужно сделать?"></textarea></div>
-      <div class="field"><label for="g">Нужно голосов</label><input class="input" id="g" type="number" value="4000" min="100"></div>
+      <div class="field"><label for="p">Описание проблемы</label><textarea class="textarea" id="p" name="problem" placeholder="Что сейчас не так?"></textarea></div>
+      <div class="field"><label for="s">Предлагаемое решение</label><textarea class="textarea" id="s" name="solution" placeholder="Что именно нужно сделать?"></textarea></div>
+      <div class="row">
+        <div class="field"><label for="g">Нужно голосов</label><input class="input" id="g" name="goal" type="number" value="4000" min="100"></div>
+        <div class="field"><label for="a">Автор</label><input class="input" id="a" name="author" placeholder="Ваше имя"></div>
+      </div>
+      <div class="form-msg"></div>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <button class="btn btn-primary" type="submit">Отправить на модерацию</button>
+        <button class="btn btn-primary" type="submit">Отправить</button>
         <a class="btn btn-ghost" href="initiatives.html">Отмена</a>
       </div>
     </form>
@@ -50,6 +54,8 @@
   </div>
   <div class="copy"><span>© 2026 Гражданин. Все права защищены.</span><span>Сделано для жителей</span></div>
 </div></footer>
+<script src="../storage.js"></script>
+<script src="../create.js"></script>
 <script src="../animations.js"></script>
 </body>
 </html>

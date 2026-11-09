@@ -356,3 +356,11 @@ p.lead{color:var(--muted);font-size:1.125rem;max-width:640px}
   .reveal{opacity:1}
   *{animation:none !important}
 }
+
+/* ===== CRUD: кнопки и панель ===== */
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn-danger{background:transparent;color:#ff8d8d;border-color:rgba(255,80,80,.4)}
+.btn-danger:hover{background:rgba(255,80,80,.12)}
+.detail-actions{display:flex;gap:12px}
+.detail-actions .btn{flex:1}
+.detail-desc{white-space:pre-line}
