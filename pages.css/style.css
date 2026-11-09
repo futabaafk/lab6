@@ -42,17 +42,18 @@ p.lead{color:var(--muted);font-size:1.125rem;max-width:640px}
   position:sticky;top:0;z-index:50;background:rgba(11,12,16,.85);
   backdrop-filter:blur(14px);border-bottom:1px solid var(--card-2);
 }
-.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;white-space:nowrap;flex-shrink:0}
 .logo-mark{
   width:28px;height:28px;border-radius:8px;background:var(--accent);
   box-shadow:0 0 22px rgba(34,89,255,.6);position:relative
 }
 .logo-mark::after{content:"";position:absolute;inset:8px;border-radius:50%;background:var(--text)}
-.menu{display:flex;gap:6px}
-.menu a{padding:8px 12px;border-radius:10px;color:var(--muted);font-size:.95rem;transition:.2s}
+.menu{display:flex;gap:2px}
+.menu a{padding:8px 10px;border-radius:10px;color:var(--muted);font-size:.92rem;white-space:nowrap;transition:.2s}
 .menu a:hover,.menu a.active{color:var(--text);background:var(--card-2)}
-.nav-actions{display:flex;gap:10px}
+.nav-actions{display:flex;gap:10px;flex-shrink:0}
+.nav-actions .btn{white-space:nowrap;padding:10px 18px}
 .burger{
   display:none;background:var(--card-2);color:var(--text);
   width:42px;height:42px;border-radius:10px;font-size:1.3rem;place-items:center
@@ -249,7 +250,7 @@ p.lead{color:var(--muted);font-size:1.125rem;max-width:640px}
 .foot-grid a:hover{color:var(--text)}
 .copy{margin-top:40px;padding-top:22px;border-top:1px solid var(--card-2);color:var(--muted-2);font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
-@media(max-width:960px){
+@media(max-width:1240px){
   .burger{display:grid}
   .menu{
     position:absolute;top:72px;left:0;right:0;background:var(--bg);flex-direction:column;
@@ -257,6 +258,8 @@ p.lead{color:var(--muted);font-size:1.125rem;max-width:640px}
   }
   .menu:target{display:flex}
   .nav-actions .btn-ghost{display:none}
+}
+@media(max-width:960px){
   .grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}
   .stats{grid-template-columns:repeat(2,1fr)}
   .detail{grid-template-columns:1fr}
@@ -268,6 +271,10 @@ p.lead{color:var(--muted);font-size:1.125rem;max-width:640px}
   .section{padding:60px 0}
   .cta{padding:34px}
   .nav-actions .btn-primary{padding:9px 14px}
+}
+@media(max-width:480px){
+  .nav-actions .btn-primary{padding:8px 11px;font-size:.84rem}
+  .logo{font-size:1.05rem}
 }
 
 /* List: карточки инициатив из JSON */
